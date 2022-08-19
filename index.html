@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Money-Master</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <h1
+      class="text-4xl my-5 text-center font-bold underline-offset-0 **text-clifford**"
+    >
+      Money Master!
+    </h1>
+    <main class="w-9/12 mx-auto columns-2 gap-4 p-5">
+      <img
+        class="rounded-md"
+        src="images/Pexels Photo by Karolina Grabowska.png"
+        alt=""
+      />
+      <div class="bg-gray-500 text-center p-4 rounded-md">
+        <h2 class="text-white font-semibold">Income:</h2>
+        <input id="income" class="my-3 p-1 rounded-md" type="" /><br />
+
+        <h2 class="text-white font-semibold">Food:</h2>
+        <input id="food" class="my-3 p-1 rounded-md" type="" /><br />
+
+        <!-- <h2 class="text-white font-semibold">Rent:</h2>
+        <input id="rent" class="my-3 p-1 rounded-md" type="" /><br /> -->
+
+        <h2 class="text-white font-semibold">Clothes:</h2>
+        <input id="clothes" class="my-3 p-1 rounded-md" type="" /><br />
+
+        <!-- button -->
+        <button
+          id="calculate-button"
+          class="bg-blue-400 text-white my-2 px-4 py-2 font-bold rounded-md"
+        >
+          Calculate
+        </button>
+
+        <h2 class="my-4 text-white font-semibold">
+          Total Expenses:
+          <span class="text-orange-400" id="total-expenses"></span>
+        </h2>
+
+        <h2 class="text-white font-semibold mb-4">
+          Balance:
+          <span class="text-orange-400" id="balance"></span>
+        </h2>
+
+        <span>
+          <span class="text-white font-semibold">Save:</span>
+          <input id="savings" class="my-3 mr-3 p-1 w-20 rounded-md" type="" />
+          <span class="text-white font-semibold">%</span>
+          <button
+            id="savings-button"
+            class="bg-blue-400 text-white ml-3 px-4 py-2 font-bold rounded-md"
+          >
+            Save
+          </button>
+        </span>
+        <h2 class="my-3 text-white font-semibold">
+          Saving amount:
+          <span class="text-orange-400" id="saving-amount"></span>
+        </h2>
+
+        <h2 class="text-white font-semibold">
+          Remaining Balance:
+          <span class="text-orange-400" id="remaining-balance"></span>
+        </h2>
+      </div>
+    </main>
+    <script src="js/money.js"></script>
+  </body>
+</html>
